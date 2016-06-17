@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7B702381D148166003C9A76 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B702371D148166003C9A76 /* main.swift */; };
+		E7A81B101D14A6600080EFA2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A81B0F1D14A6600080EFA2 /* main.swift */; };
+		E7D08A8A1D14A3010020B101 /* cryptopals_swift3_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D08A891D14A3010020B101 /* cryptopals_swift3_test.swift */; };
+		E7D08A901D14A5F40020B101 /* foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D08A8F1D14A5F40020B101 /* foo.swift */; };
+		E7D08A911D14A5F40020B101 /* foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D08A8F1D14A5F40020B101 /* foo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E7A81B0F1D14A6600080EFA2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E7A81B121D14A7C60080EFA2 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		E7B702341D148166003C9A76 /* cryptopals-swift3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cryptopals-swift3"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7B702371D148166003C9A76 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E7D08A871D14A3000020B101 /* cryptopals-swift3-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cryptopals-swift3-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D08A891D14A3010020B101 /* cryptopals_swift3_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptopals_swift3_test.swift; sourceTree = "<group>"; };
+		E7D08A8B1D14A3010020B101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D08A8F1D14A5F40020B101 /* foo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,13 +43,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7D08A841D14A3000020B101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7A81B111D14A6800080EFA2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E7A81B0F1D14A6600080EFA2 /* main.swift */,
+				E7D08A8F1D14A5F40020B101 /* foo.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		E7B7022B1D148166003C9A76 = {
 			isa = PBXGroup;
 			children = (
 				E7B702361D148166003C9A76 /* cryptopals-swift3 */,
+				E7D08A881D14A3000020B101 /* cryptopals-swift3-test */,
 				E7B702351D148166003C9A76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				E7B702341D148166003C9A76 /* cryptopals-swift3 */,
+				E7D08A871D14A3000020B101 /* cryptopals-swift3-test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +83,19 @@
 		E7B702361D148166003C9A76 /* cryptopals-swift3 */ = {
 			isa = PBXGroup;
 			children = (
-				E7B702371D148166003C9A76 /* main.swift */,
+				E7A81B111D14A6800080EFA2 /* Sources */,
+				E7A81B121D14A7C60080EFA2 /* Package.swift */,
 			);
 			path = "cryptopals-swift3";
+			sourceTree = "<group>";
+		};
+		E7D08A881D14A3000020B101 /* cryptopals-swift3-test */ = {
+			isa = PBXGroup;
+			children = (
+				E7D08A891D14A3010020B101 /* cryptopals_swift3_test.swift */,
+				E7D08A8B1D14A3010020B101 /* Info.plist */,
+			);
+			path = "cryptopals-swift3-test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +118,23 @@
 			productReference = E7B702341D148166003C9A76 /* cryptopals-swift3 */;
 			productType = "com.apple.product-type.tool";
 		};
+		E7D08A861D14A3000020B101 /* cryptopals-swift3-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7D08A8C1D14A3010020B101 /* Build configuration list for PBXNativeTarget "cryptopals-swift3-test" */;
+			buildPhases = (
+				E7D08A831D14A3000020B101 /* Sources */,
+				E7D08A841D14A3000020B101 /* Frameworks */,
+				E7D08A851D14A3000020B101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cryptopals-swift3-test";
+			productName = "cryptopals-swift3-test";
+			productReference = E7D08A871D14A3000020B101 /* cryptopals-swift3-test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,10 +151,16 @@
 						DevelopmentTeamName = "Glenn Grant (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
+					E7D08A861D14A3000020B101 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8XP37RFSK9;
+						DevelopmentTeamName = "Glenn Grant (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E7B7022F1D148166003C9A76 /* Build configuration list for PBXProject "cryptopals-swift3" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,16 +172,37 @@
 			projectRoot = "";
 			targets = (
 				E7B702331D148166003C9A76 /* cryptopals-swift3 */,
+				E7D08A861D14A3000020B101 /* cryptopals-swift3-test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7D08A851D14A3000020B101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7B702301D148166003C9A76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B702381D148166003C9A76 /* main.swift in Sources */,
+				E7A81B101D14A6600080EFA2 /* main.swift in Sources */,
+				E7D08A901D14A5F40020B101 /* foo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7D08A831D14A3000020B101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D08A911D14A5F40020B101 /* foo.swift in Sources */,
+				E7D08A8A1D14A3010020B101 /* cryptopals_swift3_test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +307,32 @@
 			};
 			name = Release;
 		};
+		E7D08A8D1D14A3010020B101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "cryptopals-swift3-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.devalias.cryptopals-swift3-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E7D08A8E1D14A3010020B101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "cryptopals-swift3-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.devalias.cryptopals-swift3-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -246,6 +352,16 @@
 				E7B7023D1D148166003C9A76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7D08A8C1D14A3010020B101 /* Build configuration list for PBXNativeTarget "cryptopals-swift3-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7D08A8D1D14A3010020B101 /* Debug */,
+				E7D08A8E1D14A3010020B101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
