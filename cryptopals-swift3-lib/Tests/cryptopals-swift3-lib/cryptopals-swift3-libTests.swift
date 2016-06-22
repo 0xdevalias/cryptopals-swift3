@@ -6,17 +6,17 @@
 //  of the MIT license.  See the LICENSE file for details.
 
 import XCTest
-@testable import cryptopals-swift3-lib
+@testable import cryptopals_swift3_lib
 
-class cryptopals-swift3-libTests: XCTestCase {
+class cryptopals_swift3_libTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertEqual(cryptopals-swift3-lib().text, "Hello, World!")
+        XCTAssertEqual(cryptopals_swift3_lib().text, "Hello, World!")
     }
 
 
-    static var allTests : [(String, (cryptopals-swift3-libTests) -> () throws -> Void)] {
+    static var allTests : [(String, (cryptopals_swift3_libTests) -> () throws -> Void)] {
         return [
             ("testExample", testExample),
         ]
